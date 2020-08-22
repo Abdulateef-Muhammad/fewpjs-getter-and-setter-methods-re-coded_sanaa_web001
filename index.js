@@ -15,14 +15,12 @@ class Circle {
     return this._pi * Math.pow(this.radius, 2);
   }
 
-  set diameter(radius) {
-    this.radius = radius;
-    this.diameter = this.radius * 2;
+  set diameter(diameter) {
+    this.radius = diameter / 2;
   }
 
-  set circumference(radius) {
-    this.radius = radius;
-    this.circumference = this._pi * this.radius * 2;
+  set circumference(circumference) {
+    this.radius = circumference / (this._pi * 2);
   }
 
   set area(radius) {
